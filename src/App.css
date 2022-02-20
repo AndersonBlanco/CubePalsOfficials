@@ -1,0 +1,258 @@
+body{
+  background-color: black; 
+  
+}
+.App{
+  padding: none;
+
+  background-color: none; 
+/*  background-color: rgb(39, 39, 39); */ 
+ 
+  background-image: url("./Imgs/webCoverBest.png");
+  background-repeat: no-repeat; 
+  background-size: cover;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: none;
+  font-family: "SF Pixelate", sans-serif;
+}
+
+.header {
+  /* background-color: rgb(35, 8, 193); */   
+background-image: url("./Gifs/backgroundPart1Gif.gif");   
+
+background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  height: cover;
+  width: cover;
+  font-family: "SF Pixelate", sans-serif;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto auto auto; 
+padding-top: 5vh; 
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.headerInner{
+
+background-size: auto;
+background-repeat: no-repeat;
+text-align: center;
+align-items: center;
+justify-content: center;
+}
+@import url("http://fonts.cdnfonts.com/css/sf-pixelate");
+
+.headerTitle {
+  font-size: 10vh;
+  -webkit-smoothing: none;
+  color: white;
+  font-family: "SF Pixelate", sans-serif;
+}
+
+.sect2 {
+  /*background-color: rgb(255, 174, 0); */
+  height: fit-content;
+  width: fit-content;
+  padding: 5vh;
+  margin-top: 50vh; 
+  /* background-image: url("Imgs/BackgroundPart2_v2.png"); */  
+  font-family: "ＭＳ Ｐゴシック";
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-position-x: center;
+  background-position-y: center;
+  background-repeat: repeat-x; 
+  background-size: cover;
+}
+
+.headerTextTitle {
+  font-size: 3.4vh;
+  margin-left: 37%;
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 3;
+  font-family: "ＭＳ Ｐゴシック";
+  text-shadow: -1vh 1vh 0.5vh black;
+}
+
+.sect3 {
+/*  background-color: rgb(0, 153, 255);  */ 
+
+ /* background-image: url("./Imgs/webCover2.png"); */ 
+ 
+
+ background-size: auto;
+ background-repeat: no-repeat;
+  height: fit-content;
+  width: fit-content;
+  border-width: 0.5vh;
+  border-color: black;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat; 
+  padding-top: 5vh;
+  padding-bottom: 5vh; 
+  padding-right: 10vh;
+  padding-left: 10vh;
+
+}
+
+.sect4 {
+/*   background-color: rgb(0, 0, 0); */ 
+ /* background-image: url("./Imgs/bottom.png"); */
+  height: fit-content;
+  width: cover;
+
+  font-size: 2vh; 
+  color: white; 
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 31vh
+}
+
+.credits {
+/*   background-color: rgb(255, 255, 255); */ 
+border-width: 5vh;
+border-color: blue;
+  height: fit-content;
+  width: cover;
+  padding: 34vh;
+
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto auto auto; 
+  grid-area: auto;
+  -ms-layout-grid-type: loose;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+
+  color: white; 
+  font-size: 2.5vh; 
+
+}
+
+.item:hover{
+text-shadow: 0vh 1vh 2vh black; 
+}
+
+
+.q1A{
+  display: none; 
+  margin: 2vh; 
+}
+
+@keyframes fade{
+  from{
+    display: none; 
+    color: white; 
+  }
+
+  to{
+    display: block;
+    color: black; 
+  }
+}
+
+.testDiv{
+  height: fit-content; 
+  width: fit-content; 
+  background-color: white;
+
+  color: black; 
+  animation-name: one;
+  animation-direction: alternate;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes one{
+  from{
+    background-color:  white; 
+  }
+  to{
+    background-color: black
+  }
+}
+.rMPP{
+  margin-left: 7vh; 
+  margin: 5vh; 
+  border-bottom: .5vh solid black;
+  color: black;
+  text-align: center;
+align-items: center;
+justify-content: center;
+border-radius: 2vh;
+box-shadow: 0vh 2vh 2vh black;
+background-color: white;
+padding: 1vh; 
+}
+
+.FUTURE{
+  animation-name: future;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+  animation-direction: alternate;
+}
+
+
+
+@keyframes future{
+  from{
+    color: black;
+
+
+  }
+
+  to{
+    color: blueviolet;
+
+  }
+}
+
+#rMP1{
+background-color: black;
+color: white;
+padding: inherit; 
+animation-iteration-count: 1;  
+animation-duration: 2s;
+
+}
+
+
+
+@keyframes grow{
+ from{
+   padding: none;
+ }
+
+ to{
+   padding: 5vh; 
+ }
+}
+
+
+#test{
+  background-image: url("./Imgs/office2.png");
+  background-size: contain;
+  height: 100vh;
+  background-repeat: no-repeat; 
+  width: 100%; 
+}
+
+#percZ{
+  background-image: url("./Imgs/office2.png");
+  background-size: contain;
+
+  background-repeat: no-repeat; 
+
+}
