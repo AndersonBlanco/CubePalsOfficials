@@ -4,9 +4,11 @@ import fade from "./App.css";
 //import * as AsyncStorage from "@react-native-async-storage/async-storage";
 //import SvgComp from "./SvgBricks"
 
-import React from "react";
+import React, { createRef } from "react";
 import {useState, useEffect, useRef} from "react";
 
+import {Slide} from "react-slideshow-image";
+import {ScrollView} from "@react-ui-org/react-ui"; 
 import imgTest from "./Imgs/webCover.png";
 
 import Modal from "react-modal";
@@ -28,6 +30,17 @@ import BackgroundPart2 from "./Imgs/BackgroundPart2.png";
  import BackgroundGradient1 from "./Imgs/backgroundGradient1.png"; 
 //import ScrollAnimation from "react-animate-on-scroll";
 
+import cubeS1 from "./Imgs/cubeSlide1.png";
+import cubeS2 from "./Imgs/cubeSlide2.png";
+import cubeS3 from "./Imgs/cubeSlide3.png";
+import cubeS4 from "./Imgs/cubeSlide4.png";
+import cubeS5 from "./Imgs/cubeSlide5.png";
+import cubeS6 from "./Imgs/cubeS6.png";
+import cubeS7 from "./Imgs/cubeS7.png";
+import cubeS8 from "./Imgs/cubeS8.png";
+import cubeS9 from "./Imgs/cubeS9.png";
+import cubeS10 from "./Imgs/cubeS10.png";
+import twitterIcon from "./Imgs/twitterIcon.png"; 
 
 //import {Switch, Route, Redirect } from "react-route-dom";
 //import {HashLink, NavHashLink } from "react-router-hash-link";
@@ -42,6 +55,118 @@ import BackgroundPart2 from "./Imgs/BackgroundPart2.png";
 //import { View, Image, StyleSheet } from 'react-native';
 
 function App() {
+
+  const ulShowRef = React.useRef();
+
+  const imgShow = [
+    {
+      url: cubeS1,
+      caption: "Cube1"
+    },
+    {
+      url: cubeS2,
+      caption: "Cube2"
+    },
+    {
+      url: cubeS3,
+      caption: "Cube3"
+    },
+    {
+      url: cubeS4,
+      caption: "Cube4"
+    },
+    {
+      url: cubeS5,
+      caption: "Cube5"
+    },
+  ];
+
+
+  const imgShowV2 = [ 
+    {
+      url: cubeS6,
+      caption: "Cube5"
+    },  {
+      url: cubeS7,
+      caption: "Cube5"
+    },  {
+      url: cubeS8,
+      caption: "Cube5"
+    },  {
+      url: cubeS9,
+      caption: "Cube5"
+    },  {
+      url: cubeS10,
+      caption: "Cube5"
+    },
+  ]
+
+  const BackedUpMarketContent = () =>{
+    return(
+      <div
+      style={{
+        display: "block",
+        flexDirection: "column"
+      }}
+    >
+      <div
+        style={{
+          display: "inline-grid",
+          gridTemplateColumns: "auto auto ",
+          gridGap: "5vh"
+        }}
+      >
+        <h2
+          style={{
+            fontSize: "5.5vh",
+            color: "white",
+            textAlign: "left",
+            alignSelf: "left",
+            textShadow: "0vh 0vh 2vh black", 
+            padding: "20vh"
+          }}
+        >
+          {" "}
+          Collect different styles, explore, and stay cool{" "}
+        </h2>
+
+        <Hub
+          title="Click to see more"
+          imgSrc={introGif1}
+          description={"Collect different styles, explore, and stay cool"}
+        />
+      </div>
+
+      {"\n"}
+
+      <div
+        style={{
+          display: "inline-grid",
+          gridTemplateColumns: "auto auto ",
+          gridGap: "5vh"
+        }}
+      >
+        <h2
+          style={{
+            fontSize: "5.5vh",
+            color: "white",
+            textAlign: "left",
+            alignSelf: "left",
+            textShadow: "0vh 0vh 1vh black", 
+           
+            padding: "20vh"
+          }}
+        >
+          {" "}
+          Trade, exchange, sell, and enjoy{" "}
+        </h2>
+        <Hub title="Click to see more" imgSrc={introGif1} />
+      </div>
+    </div>
+    )
+  }; 
+
+
 const contRef = React.useRef(); 
 
 
@@ -201,9 +326,11 @@ const creditsRef = useRef();
          <li className = "item" style = {styles.credits} onClick = {() => goTo(creditsRef)}>Credits</li>
          <li className = "item" style = {{flexDirection: "row", display: "inline"}}  onClick = {() =>{}}><a style = {{textAlign: "center", alignItems: "center", justifyContent: "center", marginLeft: "4vh"}} href = "https://discord.gg/Pdypqbg2fF"><img src = {discordIcon} style = {{height: "4vh", width: "4vh" }} /> </a></li>
          <li className = "item" style = {{flexDirection: "row", display: "inline"}}  onClick = {() =>{}}><a style = {{textAlign: "center", alignItems: "center", justifyContent: "center", margin: "2vh" }} href = "https://opensea.io/collection/cube-pals"><img src = {openSeaIcon} style = {{height: "4vh", width: "4vh" }} /></a></li>
+        <li className = "item" style={{flexDirection: "row", display: "inline"}}> <a href = "https://twitter.com/PalsNf"><img src = {twitterIcon} style = {{height: "5vh", width: "5vh", margin: "1vh",position: "relative", bottom: "-1.5vh"}} /></a></li>
       </ul>
   
     )
+
   }
 
 
@@ -309,6 +436,10 @@ const [paddingV1, setPaddingV1] = useState(false);
           height: "fit-content",
         fontFamily: "'SF Pixelate', sans-serif",
         padding: "2vh", 
+        fontSize: "4.3vh",
+        color: "white",
+        paddingBottom: "2vh", 
+
         }}
       >
         <h1
@@ -320,66 +451,141 @@ const [paddingV1, setPaddingV1] = useState(false);
           Market
         </h1>
 
-        <div
-          style={{
-            display: "block",
-            flexDirection: "column"
-          }}
-        >
-          <div
-            style={{
-              display: "inline-grid",
-              gridTemplateColumns: "auto auto ",
-              gridGap: "5vh"
-            }}
-          >
-            <h2
-              style={{
-                fontSize: "5.5vh",
-                color: "white",
-                textAlign: "left",
-                alignSelf: "left",
-                textShadow: "0vh 0vh 2vh black", 
-                padding: "20vh"
-              }}
-            >
-              {" "}
-              Collect different styles, explore, and stay cool{" "}
-            </h2>
 
-            <Hub
-              title="Click to see more"
-              imgSrc={introGif1}
-              description={"Collect different styles, explore, and stay cool"}
-            />
-          </div>
+       
+   <div>
 
-          {"\n"}
+   <h2
+style = {{
+  margin: "5vh",
+  textShadow: "0vh 0vh 2vh black"
+}}>Collect different styles, explore, and stay cool</h2> 
 
-          <div
-            style={{
-              display: "inline-grid",
-              gridTemplateColumns: "auto auto ",
-              gridGap: "5vh"
-            }}
-          >
-            <h2
-              style={{
-                fontSize: "5.5vh",
-                color: "white",
-                textAlign: "left",
-                alignSelf: "left",
-                textShadow: "0vh 0vh 1vh black", 
-               
-                padding: "20vh"
-              }}
-            >
-              {" "}
-              Trade, exchange, sell, and enjoy{" "}
-            </h2>
-            <Hub title="Click to see more" imgSrc={introGif1} />
-          </div>
-        </div>
+     <ul
+     ref = {ulShowRef} 
+     style = {{
+      display: "inline-flex",
+
+      width: "fit-content",
+      overflowY: "-moz-hidden-unscrollable",
+      margin: "1vh"
+     }}>
+     {
+     imgShow.map((image, idx) =>{
+       return(
+<motion.li
+
+
+style = {{
+  display: "inline-flex",
+}}> 
+        <motion.div
+
+        style = {{
+   
+          display: "inline-flex", 
+          padding: "2vh", 
+          paddingLeft: "4vh", 
+          backgroundColor: "white",
+          margin: "2.5vh",
+          height: "fit-content",
+          width: "fit-content", 
+          textAlign: "center",
+          alignItems: "center",
+          justifyContent: "center",
+          borderRadius: "2vh",
+          boxShadow: "0vh 0vh 2vh black"
+
+        }}>
+                
+         <motion.img 
+         src = {image.url} style = {{
+           height: "20vh", width: "20vh", margin: "1vh",
+           
+           transform: "skew(0deg)"
+            }} /> 
+
+            <span>{idx}</span>
+
+       </motion.div>
+</motion.li>
+
+       )
+     })
+   }
+
+
+       </ul>
+
+
+
+       <ul
+     ref = {ulShowRef} 
+     style = {{
+      display: "inline-flex",
+
+      width: "fit-content",
+      overflowY: "-moz-hidden-unscrollable",
+      margin: "1vh"
+     }}>
+     {
+     imgShowV2.map((image, idx) =>{
+       return(
+<motion.li
+
+
+style = {{
+  display: "inline-flex",
+}}> 
+        <motion.div
+
+        style = {{
+   
+          display: "inline-flex", 
+          padding: "2vh", 
+          paddingLeft: "4vh", 
+          backgroundColor: "white",
+          margin: "2.5vh",
+          height: "fit-content",
+          width: "fit-content", 
+          textAlign: "center",
+          alignItems: "center",
+          justifyContent: "center",
+          borderRadius: "2vh",
+          boxShadow: "0vh 0vh 2vh black"
+
+        }}>
+                
+         <motion.img 
+         src = {image.url} style = {{
+           height: "20vh", width: "20vh", margin: "1vh",
+           transform: "skew(0deg)"
+            }} /> 
+
+            <span>{idx}</span>
+
+       </motion.div>
+</motion.li>
+
+       )
+     })
+   }
+
+
+       </ul>
+
+
+<h2
+style = {{
+  margin: "5vh",
+  textShadow: "0vh 0vh 2vh black"
+}}>Trade, exchange, sell, and enjoy</h2>
+   </div>
+
+       
+
+
+
       </div>
 
       <div
@@ -418,6 +624,7 @@ style = {{
 
 <div
 style = {{
+  
   flex: 1,
   textAlign: "center",
   alignItems: "center",
@@ -427,12 +634,13 @@ style = {{
   gridTemplateRows: "auto auto auto auto auto",
 }}>
 
-<button onClick = {() => SetOpen(!open)}>CLose</button>
+
 
   
 
 <h3
             style={{
+              marginTop: "10vh", 
               fontSize: "5vh",
               color: "white",
               gridRowStart: 1,
@@ -442,26 +650,21 @@ style = {{
 
             }}
           >
-            Road Map
+            ~Road Map~
           </h3>
-
-
-
-  
-
 
 
 
           <div
         
             style={{
-              fontSize: "2vh",
+              fontSize: "2.5vh",
               color: "white",
 
               padding: "1vh",
               paddingRight: "10vh",
               paddingLeft: "10vh",
-              borderLeft: "7px solid black",
+              
               gridColumnStart: 2,
               gridClumnEnd: 2,
               gridRowStart: 2,
@@ -528,7 +731,7 @@ style = {styles.perct}
               happen in OpenSea
 
 
-              <h1 style = {{padding: "2vh"}}></h1>
+              <h1 style = {{padding: "1vh"}}></h1>
             </p>
 
 
@@ -545,9 +748,7 @@ style = {styles.perct}
         >
 
           <h2
-          style = {{
-
-          }}>
+          style = {styles.perct}>
          25%
         </h2>
 
@@ -664,7 +865,15 @@ style = {styles.perct}
 
       <div className="sect4" ref = {faqRef}>
  
-
+<h1
+style = {{
+  fontSize: "7vh",
+   float: "left",
+   marginRight: "5vh",
+   marginTop: "-10vh"
+}}>
+  FAQ
+  </h1>
 
 <ul
   style={{
@@ -681,7 +890,7 @@ style = {styles.perct}
 >
   <motion.li 
   id = "this1"
-  animate = {{padding: v1? "5vh" : "5vh", height: v1? "30vh" : "18vh"}}
+  animate = {{padding: v1? "5vh" : "5vh", height: v1? "fit-content" : "fit-content"}}
   style = {styles.items}
   onClick={() =>{
     console.log("A");
@@ -691,8 +900,8 @@ style = {styles.perct}
 
    setV1(!v1);
 
-   } }> How many cubepals are going to be release?
-   <motion.div animate = {{opacity: v1? 1 : 0, display: v1? "block" : "none"}} style = {{opacity: 0, marginTop: "5vh", color: "blue", display: "none"}} className = "q1A" id = "q1A">There will be 9,000 released!</motion.div>
+   } }> How many cubepals will be released? 
+   <motion.div animate = {{opacity: v1? 1 : 0, display: v1? "block" : "none"}} style = {{opacity: 0, marginTop: "5vh", color: "", display: "none"}} className = "q1A" id = "q1A">There will be 9,000 released!</motion.div>
 
   </motion.li>
 
@@ -726,6 +935,9 @@ style = {styles.perct}
 
 </div>
 
+
+
+
 <div className="credits" ref = {creditsRef}>
 
 <h1
@@ -734,7 +946,7 @@ style = {{
   gridColumnEnd: 2,
   gridRowStart: 1,
   gridRowEnd: 1,
-}}>Credits To:</h1>
+}}>Meet the team</h1>
 
   <div className = "credits-artist"
   style = {{
@@ -837,17 +1049,23 @@ style = {{
   }}>
     <h2
     style = {styles.titles}>Staff</h2>
-    <h4>Mr.P</h4>
+    <h4>FastDart</h4>
   </div>
 
 
      </div>
 
 
-
-
-
      <div className = "footer" id = "footer">
+       <h1>All rights reserved. Copyright CubePals @ 2022</h1>
+
+       <h2>
+         Reach us at:  
+         <br />
+       <a href = "https://twitter.com/PalsNf"><img src = {twitterIcon} style = {{height: "5vh", width: "5vh", margin: "1vh"}} /></a>
+       
+        <a href = "https://discord.gg/Pdypqbg2fF"><img src = {discordIcon} style = {{height: "5vh", width: "5vh", margin: "1vh"}} /></a>
+         </h2>
          </div>
 
     </div>
@@ -894,7 +1112,7 @@ const styles = {
   },
 
   perct:{
-  
+  fontSize: "3.4vh"
   },
 
   rmPP:{

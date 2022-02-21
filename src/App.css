@@ -5,10 +5,11 @@ body{
 .App{
   padding: none;
 
+
   background-color: none; 
 /*  background-color: rgb(39, 39, 39); */ 
  
-  background-image: url("./Imgs/webCoverBest.png");
+  background-image: url("./Imgs/webCoverA1.png");
   background-repeat: no-repeat; 
   background-size: cover;
   text-align: center;
@@ -55,11 +56,13 @@ justify-content: center;
 }
 
 .sect2 {
-  /*background-color: rgb(255, 174, 0); */
+/*  background-color: rgb(255, 174, 0); */
+ overflow: hidden; 
   height: fit-content;
-  width: fit-content;
+  width: cover;
   padding: 5vh;
-  margin-top: 50vh; 
+  margin-top: 70vh; 
+
   /* background-image: url("Imgs/BackgroundPart2_v2.png"); */  
   font-family: "ＭＳ Ｐゴシック";
   text-align: center;
@@ -88,20 +91,20 @@ justify-content: center;
  /* background-image: url("./Imgs/webCover2.png"); */ 
  
 
+ margin-bottom: -10vh; 
  background-size: auto;
  background-repeat: no-repeat;
   height: fit-content;
   width: fit-content;
-  border-width: 0.5vh;
-  border-color: black;
   text-align: center;
   align-items: center;
   justify-content: center;
   background-repeat: no-repeat; 
   padding-top: 5vh;
-  padding-bottom: 5vh; 
+  padding-bottom: 0vh; 
   padding-right: 10vh;
   padding-left: 10vh;
+
 
 }
 
@@ -116,7 +119,9 @@ justify-content: center;
   text-align: center;
   align-items: center;
   justify-content: center;
-  padding: 31vh
+  padding: 31vh;
+
+  padding-bottom: 40vh; 
 }
 
 .credits {
@@ -125,8 +130,9 @@ border-width: 5vh;
 border-color: blue;
   height: fit-content;
   width: cover;
-  padding: 34vh;
+  padding-top: 28vh;
 
+  padding-bottom: 16vh;
   display: grid;
   grid-template-columns: auto auto auto auto;
   grid-template-rows: auto auto auto auto; 
@@ -194,7 +200,7 @@ justify-content: center;
 border-radius: 2vh;
 box-shadow: 0vh 2vh 2vh black;
 background-color: white;
-padding: 1vh; 
+padding: .5vh; 
 }
 
 .FUTURE{
@@ -255,4 +261,12 @@ animation-duration: 2s;
 
   background-repeat: no-repeat; 
 
+}
+
+
+.footer{
+font-size: 2.5vh;
+color: lightgrey;
+position: relative;
+top: -10vh; 
 }
