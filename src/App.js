@@ -910,8 +910,22 @@ style = {{
 
     animate = {{height: v4? "fit-content" : "fit-content"}}
      onClick = {() =>  setV4(!v4)}
-    style = {styles.items}>  What are the cube rarities? 
-    <motion.div animate = {{opacity: v4? 1 : 0, display: v4? "block" : "none"}} style = {{opacity: 0, marginTop: "5vh", display: "none"}} className = "q1A" id = "q1A"> You will be able to trade cubepals and assets with other users</motion.div>
+    style = {styles.items}>  How do the Cube Rarities and Powers work?
+    <motion.div animate = {{opacity: v4? 1 : 0, display: v4? "block" : "none"}} style = {{opacity: 0, marginTop: "5vh", display: "none"}} className = "q1A" id = "q1A">
+     The Powers and Rarities will be used in the P2E game, rarities will multiply the power by 1.25x and 1.50x alongside access to special missions; 
+
+   
+PWR 1: 20%
+PWR 2: 10%
+PWR 3: 30%
+PWR 4: 20%
+PWR 5: 20%
+
+RRT 1: 10%
+RRT 2: 20% 
+
+
+</motion.div>
     </motion.li>
 
   <motion.li
@@ -968,7 +982,7 @@ style = {{
 
   }}>
   <h2    style = {styles.titles}>Project Manager</h2>
-    <h4>..Cubidez</h4>
+    <h4>POLOUX</h4>
   </div>
 
   <div className = "credits-Programmer"
