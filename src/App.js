@@ -751,47 +751,43 @@ style = {styles.perct}
           style = {styles.perct}>
          25%
         </h2>
-
-
-              Once over 60% of CubePals have been bought the creation of Tools
-              and Weapons for The Battle Arena will begin Weapons and Tools will
-              be used in The Battle Arena for the Battles that will take place
-              there 
-
-              <h1 style = {{padding: "2vh"}}></h1>
+        We will giveaway 15 CubePals to our Discord members and 1 ETH to a random OG CubePal Owner that white-list preordered
+              <h1 style = {{padding: "1vh"}}></h1>
 
 
               </p>
 
+            <b />
+ 
+
+          
+            <b />
 
 
-              <p
-              className="rMPP"
 
+
+            <p
             style = {styles.rMPP}
-              > 
+            className="rMPP"
+            
+            >
 
 
-                    
-
-        <h2
-        style = {styles.perct}
-    
+<h2
+style = {styles.perct}
         >
-          50%
+          75%
         </h2>
 
 
 
-              They will also be usable in the Trade Centers and Lounge,
-              but only as a cosmetic
+        We will release merchandise and CubeCoin, our own crypto-currency that will be used in phase 2 of this project. 
 
-              <h1 style = {{padding: "2vh"}}></h1>
-
+              <h1 style = {{padding: "1vh"}}></h1>
+              
+              
             </p>
 
-            <b />
-            <b />
 
             <p
             style = {styles.rMPP}
@@ -805,18 +801,12 @@ style = {styles.perct}
         >
           100%
         </h2>
+        We will release a P2E game that will use CubePal assets to play
 
-
-
-              The Battle Arena will be released for CubePal owners at last!!
-
-              <h1 style = {{padding: "2vh"}}></h1>
+        <h1 style = {{padding: "1vh"}}></h1>
               
               
             </p>
-
-            <b />
-            <b />
 
 
 
@@ -847,8 +837,9 @@ style = {styles.perct}
         </h2>
 
                 
-        We will release several extensions such as.. cube-coin, mini-game, and merchandise
-              <h1 style = {{padding: "2vh"}}></h1>
+        We will keep updating the P2E game so it's more accessible and appropriate for a larger future project that will go alongside CubePals...
+We will also release another related NFT collection that will crossover with CubePals
+              <h1 style = {{padding: "1vh"}}></h1>
 
             </p>
 

@@ -61,7 +61,7 @@ justify-content: center;
   height: fit-content;
   width: cover;
   padding: 5vh;
-  margin-top: 70vh; 
+  margin-top: 65vh; 
 
   /* background-image: url("Imgs/BackgroundPart2_v2.png"); */  
   font-family: "ＭＳ Ｐゴシック";
@@ -91,7 +91,7 @@ justify-content: center;
  /* background-image: url("./Imgs/webCover2.png"); */ 
  
 
- margin-bottom: -10vh; 
+ margin-bottom: -15vh; 
  background-size: auto;
  background-repeat: no-repeat;
   height: fit-content;
@@ -131,7 +131,8 @@ border-color: blue;
   height: fit-content;
   width: cover;
   padding-top: 28vh;
-
+ position: relative;
+ bottom: -5vh; 
   padding-bottom: 16vh;
   display: grid;
   grid-template-columns: auto auto auto auto;
@@ -268,5 +269,5 @@ animation-duration: 2s;
 font-size: 2.5vh;
 color: lightgrey;
 position: relative;
-top: -10vh; 
+top: -5vh; 
 }
