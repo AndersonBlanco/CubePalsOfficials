@@ -326,7 +326,7 @@ const creditsRef = useRef();
          <li className = "item" style = {styles.credits} onClick = {() => goTo(creditsRef)}>Credits</li>
          <li className = "item" style = {{flexDirection: "row", display: "inline"}}  onClick = {() =>{}}><a style = {{textAlign: "center", alignItems: "center", justifyContent: "center", marginLeft: "4vh"}} href = "https://discord.gg/Pdypqbg2fF"><img src = {discordIcon} style = {{height: "4vh", width: "4vh" }} /> </a></li>
          <li className = "item" style = {{flexDirection: "row", display: "inline"}}  onClick = {() =>{}}><a style = {{textAlign: "center", alignItems: "center", justifyContent: "center", margin: "2vh" }} href = "https://opensea.io/collection/cube-pals"><img src = {openSeaIcon} style = {{height: "4vh", width: "4vh" }} /></a></li>
-        <li className = "item" style={{flexDirection: "row", display: "inline"}}> <a href = "https://twitter.com/PalsNf"><img src = {twitterIcon} style = {{height: "5vh", width: "5vh", margin: "1vh",position: "relative", bottom: "-1.5vh"}} /></a></li>
+        <li className = "item" style={{flexDirection: "row", display: "inline"}}> <a href = "https://twitter.com/PalsNf"><img src = {twitterIcon} style = {{height: "4vh", width: "4vh"}} /></a></li>
       </ul>
   
     )
@@ -727,7 +727,7 @@ style = {styles.perct}
         </h2>
 
               Originating from the pixel world, CubePals! A new form of
-              pixelated characters. Your best friends.. The public mint will
+              pixelated characters. Your best friends...  <br/> The public mint will
               happen in OpenSea
 
 
@@ -781,7 +781,7 @@ style = {styles.perct}
 
 
 
-        We will release merchandise and CubeCoin, our own crypto-currency that will be used in phase 2 of this project. 
+        We will release merchandise and CubeCoin. Our own crypto-currency/token that will be used in phase 2 of this project. 
 
               <h1 style = {{padding: "1vh"}}></h1>
               
@@ -903,7 +903,7 @@ style = {{
     animate = {{height: v3? "fit-content" : "fit-content"}}
      onClick = {() =>  setV3(!v3)}
     style = {styles.items}> What is a cubepal? 
-    <motion.div animate = {{opacity: v3? 1 : 0, display: v3? "block" : "none"}} style = {{opacity: 0, marginTop: "5vh", display: "none"}} className = "q1A" id = "q1A"> A digital asset that will grant unique experiences and private gatherings!</motion.div>
+    <motion.div animate = {{opacity: v3? 1 : 0, display: v3? "block" : "none"}} style = {{opacity: 0, marginTop: "5vh", display: "none"}} className = "q1A" id = "q1A"> A digital asset that will grant access to a P2E among other things</motion.div>
     </motion.li>
 
   <motion.li
@@ -968,7 +968,7 @@ style = {{
 
   }}>
   <h2    style = {styles.titles}>Project Manager</h2>
-    <h4>..Cubidez</h4>
+    <h4>POLOUX</h4>
   </div>
 
   <div className = "credits-Programmer"
