@@ -325,7 +325,7 @@ const creditsRef = useRef();
         <li className = "item" style = {styles.main} onClick = {() => goTo(faqRef)} >FAQ</li>
          <li className = "item" style = {styles.credits} onClick = {() => goTo(creditsRef)}>Credits</li>
          <li className = "item" style = {{flexDirection: "row", display: "inline"}}  onClick = {() =>{}}><a style = {{textAlign: "center", alignItems: "center", justifyContent: "center", marginLeft: "4vh"}} href = "https://discord.gg/Pdypqbg2fF"><img src = {discordIcon} style = {{height: "4vh", width: "4vh" }} /> </a></li>
-         <li className = "item" style = {{flexDirection: "row", display: "inline"}}  onClick = {() =>{}}><a style = {{textAlign: "center", alignItems: "center", justifyContent: "center", margin: "2vh" }} href = "https://opensea.io/collection/cube-pals"><img src = {openSeaIcon} style = {{height: "4vh", width: "4vh" }} /></a></li>
+         <li className = "item" style = {{flexDirection: "row", display: "inline"}}  onClick = {() =>{}}><a style = {{textAlign: "center", alignItems: "center", justifyContent: "center", margin: "2vh" }} href = "https://opensea.io/collection/cubepals-1"><img src = {openSeaIcon} style = {{height: "4vh", width: "4vh" }} /></a></li>
         <li className = "item" style={{flexDirection: "row", display: "inline"}}> <a href = "https://twitter.com/PalsNf"><img src = {twitterIcon} style = {{height: "4vh", width: "4vh"}} /></a></li>
       </ul>
   
@@ -723,7 +723,7 @@ style = {{
 style = {styles.perct}
        
         >
-          0%
+          0% - March 12th
         </h2>
 
               Originating from the pixel world, CubePals! A new form of
@@ -892,7 +892,7 @@ style = {{
    setV1(!v1);
 
    } }> How many cubepals will be released? 
-   <motion.div animate = {{opacity: v1? 1 : 0, display: v1? "block" : "none"}} style = {{opacity: 0, marginTop: "5vh", color: "", display: "none"}} className = "q1A" id = "q1A">There will be 9,000 released!</motion.div>
+   <motion.div animate = {{opacity: v1? 1 : 0, display: v1? "block" : "none"}} style = {{opacity: 0, marginTop: "5vh", color: "", display: "none"}} className = "q1A" id = "q1A">There will be 10 Asta se que ,000 released!</motion.div>
 
   </motion.li>
 
@@ -903,7 +903,7 @@ style = {{
     animate = {{height: v3? "fit-content" : "fit-content"}}
      onClick = {() =>  setV3(!v3)}
     style = {styles.items}> What is a cubepal? 
-    <motion.div animate = {{opacity: v3? 1 : 0, display: v3? "block" : "none"}} style = {{opacity: 0, marginTop: "5vh", display: "none"}} className = "q1A" id = "q1A"> A digital asset that will grant access to a P2E among other things</motion.div>
+    <motion.div animate = {{opacity: v3? 1 : 0, display: v3? "block" : "none"}} style = {{opacity: 0, marginTop: "5vh", display: "none"}} className = "q1A" id = "q1A"> A digital asset that will grant access to a P2E game among other things</motion.div>
     </motion.li>
 
   <motion.li
@@ -912,17 +912,9 @@ style = {{
      onClick = {() =>  setV4(!v4)}
     style = {styles.items}>  How do the Cube Rarities and Powers work?
     <motion.div animate = {{opacity: v4? 1 : 0, display: v4? "block" : "none"}} style = {{opacity: 0, marginTop: "5vh", display: "none"}} className = "q1A" id = "q1A">
-     The Powers and Rarities will be used in the P2E game, rarities will multiply the power by 1.25x and 1.50x alongside access to special missions; 
+     The Powers and Rarities will be used in the P2E game, rarities will multiply the power by 1.25x and 1.50x alongside access to special missions.
 
    
-PWR 1: 20%
-PWR 2: 10%
-PWR 3: 30%
-PWR 4: 20%
-PWR 5: 20%
-
-RRT 1: 10%
-RRT 2: 20% 
 
 
 </motion.div>
