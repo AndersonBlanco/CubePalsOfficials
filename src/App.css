@@ -1,6 +1,8 @@
 body{
   background-color: black; 
-  
+  background-image: url("./Imgs/webCoverA1.png");
+  background-repeat: no-repeat; 
+  background-size: cover;
 }
 .App{
   padding: none;
@@ -9,9 +11,7 @@ body{
   background-color: none; 
 /*  background-color: rgb(39, 39, 39); */ 
  
-  background-image: url("./Imgs/webCoverA1.png");
-  background-repeat: no-repeat; 
-  background-size: cover;
+
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -57,9 +57,9 @@ justify-content: center;
 
 .sect2 {
 /*  background-color: rgb(255, 174, 0); */
- overflow: hidden; 
+ overflow: scroll; 
   height: fit-content;
-  width: cover;
+  width: fit-content;
   padding: 5vh;
   margin-top: 65vh; 
 
@@ -173,7 +173,7 @@ text-shadow: 0vh 1vh 2vh black;
 .testDiv{
   height: fit-content; 
   width: fit-content; 
-  background-color: white;
+  
 
   color: black; 
   animation-name: one;
@@ -182,14 +182,7 @@ text-shadow: 0vh 1vh 2vh black;
   animation-iteration-count: infinite;
 }
 
-@keyframes one{
-  from{
-    background-color:  white; 
-  }
-  to{
-    background-color: black
-  }
-}
+
 .rMPP{
   margin-left: 7vh; 
   margin: 5vh; 
@@ -200,7 +193,7 @@ align-items: center;
 justify-content: center;
 border-radius: 2vh;
 box-shadow: 0vh 2vh 2vh black;
-background-color: white;
+background-color: white; 
 padding: .5vh; 
 }
 
@@ -271,3 +264,4 @@ color: lightgrey;
 position: relative;
 top: -5vh; 
 }
+

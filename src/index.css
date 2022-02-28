@@ -22,9 +22,10 @@ code {
 }
 
 #root{
-  background-color: white; 
+  background-color: none; 
+
   height: cover;
-  width: cover; 
+  width: fit-content; 
   padding: none; 
   margin: none; 
 }
