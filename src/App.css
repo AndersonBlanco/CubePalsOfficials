@@ -57,7 +57,7 @@ justify-content: center;
 
 .sect2 {
 /*  background-color: rgb(255, 174, 0); */
- overflow: scroll; 
+ overflow: none; 
   height: fit-content;
   width: fit-content;
   padding: 5vh;

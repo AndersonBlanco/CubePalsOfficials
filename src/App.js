@@ -306,7 +306,7 @@ const creditsRef = useRef();
       <ul
       style = {{
         listStyle: "none",
-        fontSize: "3.1vh",
+        fontSize: "160%",
         gridColumnStart: 1,
         gridColumnEnd: 5,
           flexDirection: "row",
